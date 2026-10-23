@@ -51,7 +51,7 @@ public class ProjectMemberController {
     ) {
         Long userId = 1L;
         return ResponseEntity.ok(
-                projectMemberService.updateMemberRole(projectId, memberId, userId)
+                projectMemberService.updateMemberRole(projectId, memberId, request, userId)
         );
     }
 
